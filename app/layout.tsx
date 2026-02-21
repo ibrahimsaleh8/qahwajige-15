@@ -4,6 +4,7 @@ import { Cairo } from "next/font/google";
 import "./globals.css";
 import { APP_URL, CurrentProjectId, currentURL } from "@/lib/ProjectId";
 import { StructuredData } from "@/components/StructuredData";
+import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
 const cairoFont = Cairo({
   weight: ["1000", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -57,9 +58,6 @@ export async function generateMetadata(): Promise<Metadata> {
         googleBot: {
           index: true,
           follow: true,
-          "max-video-preview": -1,
-          "max-image-preview": "large",
-          "max-snippet": -1,
         },
       },
       alternates: {
@@ -96,6 +94,8 @@ export default async function RootLayout({
       </head>
       <body className={`${cairoFont.className} antialiased`}>
         {children}
+        <Analytics />
+
         <Script id="clixtell-tracking" strategy="afterInteractive">
           {`
             var script = document.createElement('script');
