@@ -39,7 +39,7 @@ export default function HeroSection({
             </span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl text-black md:text-7xl lg:text-8xl font-black leading-tight">
+          <h1 className="text-3xl sm:text-5xl text-black md:text-6xl font-black leading-tight">
             {headline}
           </h1>
 
