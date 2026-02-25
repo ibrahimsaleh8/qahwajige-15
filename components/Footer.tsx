@@ -13,10 +13,10 @@ export default function Footer({
 
   const footerLinks = {
     company: [
-      { name: "الرئيسية", href: "#home", emoji: "🏠" },
-      { name: "عن الشركة", href: "#about", emoji: "📖" },
-      { name: "خدماتنا", href: "#services", emoji: "☕" },
-      { name: "اتصل بنا", href: "#contact", emoji: "📞" },
+      { name: "الرئيسية", href: "/#home", emoji: "🏠" },
+      { name: "عن الشركة", href: "/#about", emoji: "📖" },
+      { name: "خدماتنا", href: "/#services", emoji: "☕" },
+      { name: "اتصل بنا", href: "/#contact", emoji: "📞" },
     ],
   };
 

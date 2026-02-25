@@ -9,11 +9,11 @@ import { IoIosCall } from "react-icons/io";
 import { AiOutlineCoffee } from "react-icons/ai";
 
 const navLinks = [
-  { href: "#about", label: "عنّا" },
-  { href: "#services", label: "خدماتنا" },
-  { href: "#packages", label: "باقاتنا" },
-  { href: "#gallery", label: "معرض الصور" },
-  { href: "#contact", label: "تواصل معنا" },
+  { href: "/#about", label: "عنّا" },
+  { href: "/#services", label: "خدماتنا" },
+  { href: "/#packages", label: "باقاتنا" },
+  { href: "/blog", label: "مقالاتنا" },
+  { href: "/#contact", label: "تواصل معنا" },
 ];
 
 export function Header({
