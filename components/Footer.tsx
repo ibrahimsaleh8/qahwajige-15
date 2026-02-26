@@ -303,7 +303,7 @@ export default function Footer({
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               {/* Copyright */}
               <div
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold"
+                className="inline-flex items-center mx-auto gap-2 px-4 py-2 rounded-full text-sm font-bold"
                 style={{
                   background: "rgba(255, 255, 255, 0.1)",
                   border: "2px solid rgba(255, 255, 255, 0.2)",
@@ -314,26 +314,6 @@ export default function Footer({
                 <span>{brandName}</span>
                 <span>•</span>
                 <span>جميع الحقوق محفوظة</span>
-              </div>
-
-              {/* Legal Links */}
-              <div className="flex items-center gap-6">
-                <Link
-                  href="/privacy"
-                  className="text-sm font-bold transition-all hover:scale-105"
-                  style={{ color: "#FFF3E0", opacity: 0.8 }}>
-                  سياسة الخصوصية
-                </Link>
-                <div
-                  className="w-1 h-1 rounded-full"
-                  style={{ background: "#FF6B35" }}
-                />
-                <Link
-                  href="/terms"
-                  className="text-sm font-bold transition-all hover:scale-105"
-                  style={{ color: "#FFF3E0", opacity: 0.8 }}>
-                  الشروط والأحكام
-                </Link>
               </div>
             </div>
           </div>
